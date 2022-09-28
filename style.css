@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Nabla', cursive; */
+    font-family: 'Poppins', sans-serif;
+}
+
+body>h1{
+    font-family: 'Nabla', cursive;
+    text-align: center;
+    font-size: 100px;
+}
+
+.con{
+    width: 600px;
+    margin: 30px auto 0;
+}
+
+.con .add{
+    padding: 15px;
+    background-color: #ffeb3b;
+    position: relative;
+    border-radius: 5px;
+}
+
+.con .add input{
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    width: calc(100% - 16px);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #756900;
+    font-size: 20px;
+    border-radius: 10px 0  0 10px;
+}
+
+.con .add input:focus{
+    outline: none;
+}
+
+.con .add span{
+    position: absolute;
+    right: 5px;
+    height: 43px;
+    width: 43px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 43px;
+    color: #ffeb3b;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+
+.con .add span:hover{
+    transform: rotateZ(180deg);
+    transition-timing-function: ease-in-out;
+}
+
+.no-tasks{
+    color: #777;
+    font-size: 15px;
+    text-align: center;
+}
+
+.con .content{
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.con .content > span{
+    display: block;
+    background-color: white;
+    padding: 10px;
+}
+
+.con .content > span:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.con .content .task-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con .content .task-box.finish{
+    text-decoration: line-through;
+}
+
+
+.con .content .task-box span{
+    color: white;
+    background-color: #f44336;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.stats{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 12px;
+}
+
+.stats .count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.stats .complate{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+
+.stats .count span,
+.stats .complate span{
+    color: white;
+    padding: 1px 5px;
+    font-size: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.stats .count span{
+    background-color: #f44336;
+}
+
+.stats .complate span{
+    background-color: #4caf50;
+}
