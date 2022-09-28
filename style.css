@@ -13,6 +13,12 @@ body>h1{
     font-size: 100px;
 }
 
+@media (max-width: 556px) {
+    body>h1{
+        font-size: 50px;
+    }
+}
+
 .con{
     width: 600px;
     margin: 30px auto 0;
